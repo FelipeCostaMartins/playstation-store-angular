@@ -1,0 +1,27 @@
+
+/* ================================================= */
+/* SMALL-CARDS */
+
+.small-card__component{
+  margin: 26px;
+  width: 90%;
+}
+
+.small-card__component > h2 {
+  font-weight: 100;
+}
+.small-card__images{
+  display: flex;
+}
+.small-card__images>img{
+  width: 20%;
+  min-width: 20%;
+  border-radius: 10px;
+  margin: 7px 10px 7px 0px;
+
+  position: relative;
+  transition: transform .5s;
+}
+.small-card__images>img:hover{
+  transform: scale(1.06);
+}

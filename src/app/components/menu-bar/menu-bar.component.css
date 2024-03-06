@@ -1,0 +1,39 @@
+/* ================================================= */
+/* BARRA DE MENU */
+.menu-bar {
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  box-shadow: 0 16px 32px 0 rgba(0,0,0,.12);
+  background-color: white;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.menu-bar > a > img {
+  width: 175px;
+}
+
+.menu-bar > ul {
+  display: flex;
+  margin: auto;
+}
+
+.menu-bar > ul > li {
+  margin: 10px 20px 10px 10px;
+  font-weight: 600;
+  border-radius: 10px;
+  padding: 1px 6px;
+  transition: linear .5s;
+}
+
+.menu-bar > ul > li:hover {
+  background-color: rgb(215, 215, 215);
+}
+
+/* Estilo adicional para o placeholder-element */
+#placeholder-element {
+  height: 100px; /* Ajuste conforme necessário */
+}

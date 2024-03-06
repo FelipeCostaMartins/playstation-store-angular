@@ -1,0 +1,62 @@
+
+/* ================================================= */
+/* BIG-CARDS */
+
+.big-card__component {
+  display: flex;
+  flex-direction: column; /* Empilha os elementos verticalmente */
+  margin: 40px 20px;
+}
+
+.big-card-row {
+  display: flex;
+}
+
+.big-card-image {
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 7px;
+  width: 30%; /* Definindo a largura padrão */
+}
+
+.big-card-image > img {
+  position: relative;
+  min-width: 100%;
+  min-height: 100%;
+  width: 100%; /* Faz as imagens ocuparem toda a largura da div */
+  border-radius: 10px;
+  transition: transform .7s;
+}
+
+.big-card-image > img:hover {
+  transform: scale(1.1);
+}
+
+.big-card-text {
+  margin: auto;
+  margin-top: 14px;
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.big-card-text > a{
+  color: rgb(0, 106, 226);
+}
+
+.big-card-text:hover {
+  background-color: lightgrey;
+  transition: .5s;
+}
+
+/* Media query para ajustar o layout quando a largura da tela for reduzida */
+@media screen and (max-width: 768px) {
+  .big-card-row {
+    flex-direction: column; /* Altera para empilhar as imagens verticalmente */
+  }
+
+  .big-card-image {
+    width: calc(50%); /* Define a largura para 100% - 14px para ocupar a largura total da linha */
+    margin: auto;
+  }
+}
